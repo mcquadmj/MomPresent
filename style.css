@@ -1,0 +1,64 @@
+.TitleBar {
+    background-color:wheat;
+    margin: 0;
+    color:black !important;
+    text-align: center;
+    font-size: x-large;
+    z-index: 5;
+  }
+
+  .TitleBar:hover{
+background-color: maroon;
+color: wheat !important;
+  }
+
+  body
+  {
+      color:white;
+    }
+
+    h1{
+        margin: 0;
+        font-size: 6.2rem;
+    font-family: cursive;
+    border-bottom: solid;
+    border-bottom-color: maroon;
+    border-right: solid;
+    border-right-color: maroon;
+    border-left: solid;
+    border-left-color: maroon;
+    }
+
+    .PageBody1{
+        background-image: url(assets/MomPresBackground.jpg);
+        z-index: 1;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .centerBlock {
+      display: flex;
+  justify-content: center;
+    }
+
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%
+    }
+
+    .main{
+      margin-top: 9rem;
+    }
+
+    div{
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+    }
+
+  
+
+  
