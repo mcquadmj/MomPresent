@@ -29,6 +29,12 @@ color: wheat !important;
     border-left-color: maroon;
     }
 
+    h2{
+      font-size: 4.5rem;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+
     .PageBody1{
         background-image: url(assets/MomPresBackground.jpg);
         z-index: 1;
@@ -80,6 +86,29 @@ color: wheat !important;
       font-size: large;
       bottom: 0;
   width: 100%;
+    }
+
+.arrowRight{
+  height: 9rem;
+  width: auto;
+  margin-top: 7rem;
+  margin-right: 15rem;
+}
+
+.arrowLeft{
+  height: 9rem;
+  width: auto;
+  margin-top: 7rem;
+  margin-left: 15rem;
+}
+
+    .arrowRight:hover{
+      height: 14rem;
+      width: auto;
+    }
+    .arrowLeft:hover{
+      height: 14rem;
+      width: auto;
     }
 
 
