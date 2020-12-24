@@ -19,7 +19,7 @@ color: wheat !important;
 
     h1{
         margin: 0;
-        font-size: 6.2rem;
+        font-size: 6.7rem;
     font-family: cursive;
     border-bottom: solid;
     border-bottom-color: maroon;
@@ -30,9 +30,11 @@ color: wheat !important;
     }
 
     h2{
-      font-size: 4.5rem;
+      font-size: 5rem;
       font-weight: bold;
       text-decoration: underline;
+      padding-bottom:.5rem;
+      text-shadow: crimson;
     }
 
     .PageBody1{
@@ -48,13 +50,20 @@ color: wheat !important;
     }
 
     .sticky {
-      position: fixed;
+      position:fixed;
+      top: 0;
+      width: 100%
+    }
+
+    .notSticky{
+      position:static;
       top: 0;
       width: 100%
     }
 
     .main{
-      margin-top: 9rem;
+      margin-top: 10.5rem;
+      
     }
 
     div{
@@ -110,6 +119,54 @@ color: wheat !important;
       height: 14rem;
       width: auto;
     }
+
+.displayedPicMain{
+  border-color: white; 
+  border:solid;
+  height: 31rem;
+  width: auto;
+}
+
+.displayedPic{
+  border-color: white; 
+  border:solid;
+  height: 26rem;
+  width: auto;
+}
+
+.displayedPicBig{
+  border-color: white; 
+  border:solid;
+  height: 58rem;
+  width: auto;
+  max-width: 50rem;
+}
+
+/*.displayedPic:hover{
+height: 35rem;
+}
+*/
+.info{
+  margin:2.5rem; margin-right:17rem; margin-left: 17rem; background-color: rgba(53, 0, 53, 0.397); font-weight: bold; font-size: 2.5rem; font-family: -webkit-pictograph; border:solid; border-width: .1rem; border-color: rgba(131, 0, 0, 0.144);
+}
+
+.Surprise{
+  border: dashed;
+  border-color:green;
+  border-width: .5rem;
+  background-color: rgba(21, 27, 5, 0.596);
+}
+
+.SurpriseMessage{
+text-align: Center;
+color: red;
+font-family: monospace;
+font-size: 3rem;
+}
+
+.hidden{ 
+  display: none;
+}
 
 
   

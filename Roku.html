@@ -23,47 +23,7 @@
 color: red;
 margin-bottom: 0;">click to return to home screen</p>
 </top> 
-<div class="main">
-      <div>
-            <h2>
-                  Reason 3: Bal Bal Bal
-            </h2>
-      </div>
-<div class="container">
-      <div class="row">
-          <div class="col-xs-3">
-          <img class="arrowLeft" id="leftArrow" src="assets/leftArrow.png" width="150rem" height="300rem" onclick="prevPic()">
-          </div>  
-      
-          <div class="centerBlock col-xs-6">
-            <img id="displayedPicture" src="assets/KMM0.JPG" class="displayedPic" onclick="imageBig()">
-          </div>  
-      
-          <div class="col-xs-3">
-            <img class="arrowRight" id="rightArrow" src="assets/rightArrow.png" width="150rem" height="300rem" onclick="nextPic()">
-          </div>  
-      
-          <!-- now that we have used up all the 12 coloumbs in this row , lets go create a new "row class" , Alas in the same container -->
-      </div>  <!-- end of row -->
-      
-      </div>  <!-- end of container -->
-<div class="info" >
-This site is dedicated to explaining just a few of the many reasons that we all love Katie McQuade. Clicking a flower below will take you to a respective reason, and you can return to this home screen any time by clicking the top bar area.
-</div>
-<div style="padding-top: 2rem;">
-<div class="container">
-      <div class="row">
-      <div class="centerBlock col-xs-6 " style="padding: 1rem; padding-left: 15rem;"> <div></div>
-      <div class="centerBlock col-xs-6" style="padding: 1rem; padding-right: 15rem;"> <div></div>
-</div>
-</div>
-</div>
-
-
-
-
-
-</div>
+<div style="margin-top: 20rem;">test</div>
 <footer class="footermike"> <hr>
       Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.youtube.com/watch?v=8IrheLf0Ki0&ab_channel=FINALFANTASY">Michael </a> &  <a style="color:rgb(236, 236, 160)" href="https://www.facebook.com/pages/category/Personal-Blog/The-rifleman-fan-club-104144888186218">Joe McQuade</a>
       </footer>
@@ -74,8 +34,8 @@ This site is dedicated to explaining just a few of the many reasons that we all 
 
 (function() {
       var x = sessionStorage.getItem("visitArray");
-      if(x != null && !x.includes('c')){
-      var y = x + "c";
+      if(x != null && !x.includes('a')){
+      var y = x + "a";
       sessionStorage.setItem("visitArray",y);
       }
 })()
@@ -121,18 +81,5 @@ String.prototype.replaceAt = function(index, replacement) {
            console.log(newsrc);
            pic.src = newsrc;
       }
-
-      function imageBig(){
-            var pic = document.getElementById('displayedPicture');
-            if(pic.classList[0] == 'displayedPic'){
-                  pic.classList.remove('displayedPic');
-                  pic.classList.add('displayedPicBig');
-            }
-            else{
-                  pic.classList.remove('displayedPicBig');
-                  pic.classList.add('displayedPic');
-            }
-      }
-
 
 </script>

@@ -28,7 +28,7 @@
           </div>  
       
           <div class="centerBlock col-xs-6">
-            <img src="assets/tempPic1.jpg" width="300rem" height="300rem" style="border-color: white; border:solid">
+            <img src="assets/KatieMain.JPG" class="displayedPicMain">
           </div>  
       
           <div class="col-xs-3">
@@ -40,9 +40,12 @@
       
       </div>  <!-- end of container -->
 <div style="margin:2.5rem; margin-right:17rem; margin-left: 17rem; background-color: rgba(53, 0, 53, 0.397); font-weight: bold; font-size: 2rem; font-family: -webkit-pictograph; border:solid; border-width: .1rem; border-color: rgba(131, 0, 0, 0.144);">
-This site is dedicated to explaining just a few of the many reasons that we all love Katie McQuade. Clicking a flower below will take you to a respective reason, and you can return to this home screen any time by clicking the top bar area. Once within a reason page, you can click the arrows to cycle through some pictures showing how great Katie McQuade is.
+This site is dedicated to explaining just a few of the many reasons that we all love
+ Katie McQuade. Clicking a flower below will take you to a respective reason, and you 
+ can return to this home screen any time by clicking the top bar area. Once within a reason page, 
+ you can click the arrows to cycle through some pictures showing how great Katie McQuade is. You can also click on the pictures to toggle the size of the pictures displayed. 
 </div>
-<div style="padding-top: 2rem;">
+<div style="padding-top: 2rem; padding-bottom: 3rem;">
 <div class="container">
       <div class="row">
       <div class="centerBlock col-xs-6 " style="padding: 1rem; padding-left: 15rem;" onclick="location.href='Reason1.html';"> <div class="reason">1</div></div>
@@ -55,14 +58,12 @@ This site is dedicated to explaining just a few of the many reasons that we all 
 </div>
 </div>
 </div>
-
-
-
-
-
+<div id="surprise" class="Surprise hidden">
+<div class="SurpriseMessage"> !!!Congatulations!!! You have visited every reason page and unlocked an extra page. Click below to see the page you have unlocked</div>
+<button type="button" class="btn btn-info" style="size:6rem; box-shadow: rgb(43, 48, 48); color:black;" onclick="location.href='Roku.html';">Click Me</button>
 </div>
 <footer class="footermike"> <hr>
-Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.w3schools.com/">Michael </a> &  <a style="color:rgb(236, 236, 160)" href="https://www.youtube.com/">Joe McQuade</a>
+Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.youtube.com/watch?v=8IrheLf0Ki0&ab_channel=FINALFANTASY">Michael </a> &  <a style="color:rgb(236, 236, 160)" href="https://www.facebook.com/pages/category/Personal-Blog/The-rifleman-fan-club-104144888186218">Joe McQuade</a>
 </footer>
 </body>
 </html>
@@ -70,16 +71,18 @@ Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.w3sc
 <script>
       (function() {
       if(sessionStorage.getItem("visitArray") != null){
-            if((sessionStorage.getItem("visitArray").includes("1"))
-            && (sessionStorage.getItem("visitArray").includes("2"))
-            && (sessionStorage.getItem("visitArray").includes("3"))
-            && (sessionStorage.getItem("visitArray").includes("4"))
-            && (sessionStorage.getItem("visitArray").includes("5"))){
+            if((sessionStorage.getItem("visitArray").includes("a"))
+            && (sessionStorage.getItem("visitArray").includes("b"))
+            && (sessionStorage.getItem("visitArray").includes("c"))
+            && (sessionStorage.getItem("visitArray").includes("d"))
+            && (sessionStorage.getItem("visitArray").includes("e"))){
                   console.log("all 5");
+                var elem =  document.getElementById("surprise");
+                elem.classList.remove("hidden");
             }
       }
       else{
-            sessionStorage.setItem("visitArray","0");
+            sessionStorage.setItem("visitArray","z");
       }
       
 })()

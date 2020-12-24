@@ -19,11 +19,14 @@
 <h1>
       5 Reasons We Love Katie McQuade
 </h1>
+<p style="font-size: 1rem;
+color: red;
+margin-bottom: 0;">click to return to home screen</p>
 </top> 
-<div class="main ">
+<div class="main">
       <div>
             <h2>
-                  Reason 2: The Best Nurse
+                  Reason 2: Bal Bal Bal
             </h2>
       </div>
 <div class="container">
@@ -33,7 +36,7 @@
           </div>  
       
           <div class="centerBlock col-xs-6">
-            <img id="displayedPicture" src="assets/tempPic1.jpg" width="300rem" height="300rem" style="border-color: white; border:solid">
+            <img id="displayedPicture" src="assets/KMM0.JPG" class="displayedPic" onclick="imageBig()">
           </div>  
       
           <div class="col-xs-3">
@@ -44,7 +47,7 @@
       </div>  <!-- end of row -->
       
       </div>  <!-- end of container -->
-<div style="margin:2.5rem; margin-right:17rem; margin-left: 17rem; background-color: rgba(53, 0, 53, 0.397); font-weight: bold; font-size: 2rem; font-family: -webkit-pictograph; border:solid; border-width: .1rem; border-color: rgba(131, 0, 0, 0.144);">
+<div class="info" >
 This site is dedicated to explaining just a few of the many reasons that we all love Katie McQuade. Clicking a flower below will take you to a respective reason, and you can return to this home screen any time by clicking the top bar area.
 </div>
 <div style="padding-top: 2rem;">
@@ -62,8 +65,8 @@ This site is dedicated to explaining just a few of the many reasons that we all 
 
 </div>
 <footer class="footermike"> <hr>
-Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.w3schools.com/">Michael </a> &  <a style="color:rgb(236, 236, 160)" href="https://www.youtube.com/">Joe McQuade</a>
-</footer>
+      Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.youtube.com/watch?v=8IrheLf0Ki0&ab_channel=FINALFANTASY">Michael </a> &  <a style="color:rgb(236, 236, 160)" href="https://www.facebook.com/pages/category/Personal-Blog/The-rifleman-fan-club-104144888186218">Joe McQuade</a>
+      </footer>
 </body>
 </html>
 
@@ -71,9 +74,9 @@ Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.w3sc
 
 (function() {
       var x = sessionStorage.getItem("visitArray");
-      if(x != null && !x.includes('2')){
-      x.concat('2');
-      sessionStorage.setItem("visitArray",x);
+      if(x != null && !x.includes('b')){
+      var y = x + "b";
+      sessionStorage.setItem("visitArray",y);
       }
 })()
 
@@ -92,8 +95,8 @@ String.prototype.replaceAt = function(index, replacement) {
            var src = pic.src.toString();
            var i = Number(src[src.length-5]);
            var z;
-            if(i == 5){
-                  z = 1;
+            if(i == 9){
+                  z = 0;
             }
             else{
                   z = i+1;
@@ -108,8 +111,8 @@ String.prototype.replaceAt = function(index, replacement) {
            var src = pic.src.toString();
            var i = Number(src[src.length-5]);
            var z;
-            if(i == 1){
-                  z = 5;
+            if(i == 0){
+                  z = 9;
             }
             else{
                   z = i-1;
@@ -117,6 +120,18 @@ String.prototype.replaceAt = function(index, replacement) {
             var newsrc = src.replaceAt(src.length-5,z.toString())
            console.log(newsrc);
            pic.src = newsrc;
+      }
+
+      function imageBig(){
+            var pic = document.getElementById('displayedPicture');
+            if(pic.classList[0] == 'displayedPic'){
+                  pic.classList.remove('displayedPic');
+                  pic.classList.add('displayedPicBig');
+            }
+            else{
+                  pic.classList.remove('displayedPicBig');
+                  pic.classList.add('displayedPic');
+            }
       }
 
 </script>
