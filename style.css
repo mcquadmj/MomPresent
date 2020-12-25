@@ -142,6 +142,20 @@ color: wheat !important;
   max-width: 60rem;
 }
 
+.displayedPicRoku{
+  border-color: rgb(136, 8, 130); 
+  height: 60.5rem;
+  border:solid;
+  width: auto;
+}
+
+.displayedPicRokuBig{
+  border-color: rgb(136, 8, 130); 
+  border: solid;
+  height: 110rem;
+  width: auto;
+}
+
 /*.displayedPic:hover{
 height: 35rem;
 }

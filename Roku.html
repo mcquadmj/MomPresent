@@ -23,7 +23,12 @@
 color: red;
 margin-bottom: 0;">click to return to home screen</p>
 </top> 
-<div style="margin-top: 20rem;">test</div>
+<div style="margin-top: 13rem;">
+      <img id="displayedPicture" class="displayedPicRoku" src="assets/RokuGuide.PNG" onclick="imageBig()">
+</div>
+<div style="padding-top:3rem ;">
+Here is a guide I made to explain how to navigate to the Katies shows on her roku tv. Click on the picture to toggle its size. You can even save this picture above by right clicking it and print it out for a physical copy if you want.
+</div>
 <footer class="footermike"> <hr>
       Copyright &copy; 2020 <a style="color:rgb(247, 247, 181)" href="https://www.youtube.com/watch?v=8IrheLf0Ki0&ab_channel=FINALFANTASY">Michael </a> &  <a style="color:rgb(236, 236, 160)" href="https://www.facebook.com/pages/category/Personal-Blog/The-rifleman-fan-club-104144888186218">Joe McQuade</a>
       </footer>
@@ -80,6 +85,18 @@ String.prototype.replaceAt = function(index, replacement) {
             var newsrc = src.replaceAt(src.length-5,z.toString())
            console.log(newsrc);
            pic.src = newsrc;
+      }
+
+      function imageBig(){
+            var pic = document.getElementById('displayedPicture');
+            if(pic.classList[0] == 'displayedPicRoku'){
+                  pic.classList.remove('displayedPicRoku');
+                  pic.classList.add('displayedPicRokuBig');
+            }
+            else{
+                  pic.classList.remove('displayedPicRokuBig');
+                  pic.classList.add('displayedPicRoku');
+            }
       }
 
 </script>
